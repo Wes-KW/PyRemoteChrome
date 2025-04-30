@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "pyremotechrome"
+version = "0.1.5"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[tool.setuptools.package-data]
+"*" = ["*.*"] # Include resources
+
+[project]
+name = "pyremotechrome"
+version = "0.1.5"
+authors = [
+  { name="Wes-KW", email="dotdotdashdash2024@hotmail.com" },
+]
+dependencies = [
+  "selenium>=4.19.0",
+  "psutil>=5.9.8",
+  "PyVirtualDisplay>=3.0",
+  "requests>=2.32.1",
+  "pytz>=2024.1"
+]
+description = "PyRemoteChrome"
+readme = "README.md"
+requires-python = ">=3.8, <4"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/Wes-KW/PyRemoteChrome"
+Issues = "https://github.com/Wes-KW/PyRemoteChrome/issues"

@@ -1,0 +1,62 @@
+{
+    "server": {
+        "url": {
+            "scheme": "http",
+            "name": "localhost",
+            "ips": ["127.0.0.1:80"],
+            "port": 5777
+        },
+        "python_executable_path": "/usr/bin/python3",
+        "debug": true
+    },
+    "session": {
+        "size": {
+            "screen": {
+                "width": 1600,
+                "height": 1200 
+            },
+            "window": {
+                "width": 1024,
+                "height": 768
+            },
+            "scale": 2
+        },
+        "webdriver_executable_path": "/usr/bin/chromedriver",
+        "user_agent": "USER_AGENT",
+        "data_dir": "/PATH/TO/DATA",
+        "default_url": "about:blank",
+        "rules": {
+            "url": {
+                "allow": ["^https?://", "about:blank"],
+                "deny": ["^https?://localhost(?!:5777)", "^https?://127.0.0.1(?!:5777)"]
+            },
+            "action": {
+                "allow": [
+                    "get", "back", "forward", "refresh",
+                    "get_window_size", "set_window_size",
+                    "open_tab", "close_tab", "quit",
+                    "get_cursor_position", "mouse_move",
+                    "mouse_hold", "mouse_release", "left_click",
+                    "right_click", "double_click", "scroll",
+                    "key"," key_seq", "cut", "copy", "paste",
+                    "capture_screeenshot", "get_current_url",
+                    "get_current_title", "get_current_icon",
+                    "update_and_get_info", "create_session",
+                    "destroy_session"
+                ],
+                "deny": []
+            }
+        }
+    },
+    "ffmpeg": {
+        "ffmpeg_exec": "/usr/bin/ffmpeg",
+        "probesize": "16M",
+        "segment_time": 1,
+        "frame_per_second": 30,
+        "queue_size_multiplier": 2,
+        "audio_itsoffset": 2.1,
+        "maxrate": "160M",
+        "bufsize": "80M",
+        "constant_rate_factor": 28
+    }
+}
