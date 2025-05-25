@@ -3,7 +3,7 @@ PyRemoteChrome is a server that allows you to control chrome/chromium remotely u
 
 The software uses selenium webdriver to control chrome/chromium and uses ffmpeg to generate http-live-streamming. Audio is included in the stream.
 
-[**PyRemoteChrome** is not longer maintained.](javascript:;)
+**PyRemoteChrome** is not longer maintained. 
 
 ## Features
 - [ ] Mouse movement:
